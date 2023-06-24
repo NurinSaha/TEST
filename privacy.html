@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title> iGURU OFFICIAL </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="ASSESTS/JAVASCRIPT/main.js">
+
+<body>
+<body bgcolor="#EEE6CB">
+<!------------- Header-------------->
+<div class="sidenav">
+  <a href="index.html"><img src="ASSESTS/PHOTOS/LOGO.png" width="93%"></a>
+<br>
+  <a href="about.html">About Us</a>
+<br>
+  <a href="board.html">Board</a>
+<br>
+  <a href="subject.html">Subjects</a>
+<br>
+  <button class="dropdown-btn">Level +
+  </button>
+  <div class="dropdown-container">
+    <a href="primary.html">Primary</a>
+    <a href="secondary.html">Secondary</a>
+    <a href="tertiary.html">Tertiary</a>
+  </div>
+<br>
+  <a href="pricing.html">Pricing</a>
+<br><br><br><br><br><br>
+<!-----Go Up------->
+<div class="button">
+  <center>
+    <div class="tooltip"><a href=""><img src="ASSESTS/PHOTOS/BOOKFLY.gif" width="84%"></a>
+      <span class="tooltiptext">I can fly up </span>
+      </div>
+  </div>
+  </div>
+  </center>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+<br><br><br>
+<!-----intro-->
+<div class="text">
+  <div style="padding-left:200px">
+    <h1 class="title"><i>Privacy Policy</i></h1>
+    <br>
+  <p> This page is focusing on the company Privacy Policy. <br>We care for you</p>
+
+
+  <center><embed src="ASSESTS/PHOTOS/GOGO.pdf" width="800px" height="2100px" /></center></div></div>
+<br><br><br><br><br><br><br><br><br><br><br>
+<div></div>
+  
+</div>
+</center>
+<br><br><br><br><br><br>
+
+<!------- footer---------->
+<section id="lastsection">
+<center>
+<div class="footer">
+<div style="padding-left:200px">
+<a href=""><img src="ASSESTS/PHOTOS/LOGO.png" width="8%"><a/>
+<div class="tooltip"><a href="http://wasap.my/601164411586" target="_blank"><img src="ASSESTS/PHOTOS/WASSAP.png" width="42px">
+<span class="tooltiptext">Follow US Both</span>
+</div>
+<a href="https://www.facebook.com/profile.php?id=100093641504615&mibextid=ZbWKwL" target="_blank"><img src="ASSESTS/PHOTOS/FACEBOOK.png" width="43px"></a>
+<br>
+<p>
+<font size="3px" color="white">
+<a href="privacy.html">Privacy Policy</a></p>
+<p><font size="3px" color="white">Copyright © 2023 <b>iGURU Official</b> All rights reserved</p>
+</div>
+</div></body>
+</html>
+
+
+

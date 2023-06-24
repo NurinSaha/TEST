@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<title> iGURU CONTOH</title>
+<link rel="stylesheet" href="style.css">
+
+<body>
+<body bgcolor="#EEE6CB">
+<!------------- Header-------------->
+<div class="sidenav">
+  <a href="index.html"><img src="ASSESTS/PHOTOS/LOGO.png" width="93%"></a>
+<br>
+  <a href="about.html">About Us</a>
+<br>
+  <a href="board.html">Board</a>
+<br>
+  <a href="subject.html">Subjects</a>
+<br>
+  <button class="dropdown-btn">Level +
+  </button>
+  <div class="dropdown-container">
+    <a href="primary.html">Primary</a>
+    <a href="secondary.html">Secondary</a>
+    <a href="tertiary.html">Tertiary</a>
+  </div>
+<br>
+  <a href="pricing.html">Pricing</a>
+<br><br><br><br><br><br>
+<!-----Go Up------->
+<div class="button">
+<center>
+  <div class="tooltip"><a href=""><img src="ASSESTS/PHOTOS/BOOKFLY.gif" width="84%"></a>
+    <span class="tooltiptext">I can fly up </span>
+    </div>
+</div>
+</div>
+</center>
+
+<div style="padding-left:210px">
+  <video width="99%" height="770px"loop autoplay muted>
+    <source src="ASSESTS/VIDEOS/INTRO.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+<br><br>
+<!------tagline slideshow with 1 button--------->
+<br>
+<div class="slideshow-container">
+  <div style="padding-left:200px">
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <q><b>Amazing Tutor Services With Outstanding Achievements From All Education Level</b></q>
+  </div>
+
+  <div class="mySlides">
+    <q><b>Private Homeschooling and Online Homeschooling The Way You Like The Way You Need</b></q>
+  </div>
+
+  <div class="mySlides">
+    <q> <b>No.1 MALAYSIAN Parents' Choice in Tutor Community With Over 5000++ Proven Testimonies</b></q>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <div style="padding-left:200px">
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div style="padding-left:200px">
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
+</div>
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br><br><br><br><br><br><br><br><br>
+<!-----Why Choosse 1 Section-->
+<br><br><br>
+<div class="choose1">
+<div style="padding-left:200px">
+<center><h1 class="title"><p>Why Choose 1-to-1 Tuition With Us? &#127979;</p></h1></center>
+<br><br>
+<center>
+<div class="box"><h2>Tuition For Grades 1 to Upper Secondary </h2></div>
+<div class="box"><h2>Same Tutor For the Long Term Especially Online Sessions</h2></div>
+<div class="box"><h2>One-to-One Personalized Tuition</h2></div>
+<div class="box"><h2>Certified Experienced Tutors</h2></div></center>
+
+<script>
+  const boxes = document.querySelectorAll('.box')
+  window.addEventListener('scroll', checkBoxes) 
+  checkBoxes()
+
+  function checkBoxes(){
+    const triggerBottom = window.innerHeight / 5 * 4 
+    boxes.forEach (box => {
+      const boxTop = box.getBoundingClientRect().top
+      if(boxTop < triggerBottom){
+        box.classList.add ('show')
+      } else{
+        box.classlist.remove('show')
+      }
+    })
+  }
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Why Choose 2 Section-->
+<div class="choose2">
+    <center>
+    <h1 class="title"><p>Why Choose Our Online Tuition? &#128187;</p></h1></center>
+    <br><br>
+    <div style="padding-left:200px">
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h3>Near You</h3>
+          <p>If you on the hunt for reliable online tuition services to get exam ready? </p>
+          <p>No need to search "tuition centers near me" as we are here to GURU You!</p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <h3>Personalized Classes</h3>
+          <p>Our personalized online classrooms is what you looking for </p>
+          <p>Our classes was cater to match the individual requirements of each of our students</p>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <h3>Reliable</h3>
+          <p>Are you struggling to find reliable and professional online tuition for your child. </p>
+          <p>Our best online tutoring led by qualified, experienced, and trained private home tutors.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+<!----What Us Offer Section-->
+<div class="choose3">
+  <div style="padding-left:200px">
+    <center><h2 class="title">What Does Us Offer?</h2></center></div><br> 
+    <div style="padding-left:340px">
+    <table>
+      <tr>
+        <td style="font-size: 120px;">&#127891</td>
+        <td>We offer as follows:
+          <table>
+            <tr>
+              <td>+ <b>Live & Interactive Learning</b> with One-on-one tuition in the comfort of your home or on the go! Online or Homeschooling, there is customized Study Plans which the personalized lessons to match student abilities based on comprehensive diagnostic assessments/td>
+            </tr>
+            <tr>
+              <td>+ <b>Subjects On Demand</b> that you choose what you want to learn—any subject, any time! with a very <b>Quick Sign Up and Response</b> that is convenient, fast and reliable. Online home tuition at your fingertips in under 12 hours.</td>
+            </tr>
+            <tr>
+              <td>+ <b>Flexible Timings</b> and online tuition durations to fit your schedule and even Recorded Lessons for students to refer back to!</td>
+            </tr>
+            <tr>
+              <td>+ <b>Parental Engagement</b> that parents are given constructive feedback from tutors after each lesson and also Student-Tutor Resource Portal in this all-in-one portal to set and grade homework, past papers, assessments & assignments</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+<!---Collaborators Section-->
+<div style="padding-left:200px">
+  <div class="collab">
+    <h2 class="title"><p>Our Collaborators &#128227;</p></h2>
+  </div>
+</div>
+<br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://mcplus.my/">
+      <img src="ASSESTS/PHOTOS/MCPLUS.png" width="50" height="10">
+    </a>
+    <div class="desc">MC PLUS Malaysian Tutor Service</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.tutoroo.co/">
+      <img src="ASSESTS/PHOTOS/TUTOROO.png" width="50" height="10">
+    </a>
+    <div class="desc">Tutoroo International Tutor Service</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.tutopiya.com/my/">
+      <img src="ASSESTS/PHOTOS/TUTOPIYA.png" width="50" height="10">
+    </a>
+    <div class="desc">Tutopiya Malaysian Tutor Service</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!------- footer---------->
+<section id="lastsection">
+<center>
+<div class="footer">
+<div style="padding-left:200px">
+<a href=""><img src="ASSESTS/PHOTOS/LOGO.png" width="8%"><a/>
+<div class="tooltip"><a href="http://wasap.my/601164411586" target="_blank"><img src="ASSESTS/PHOTOS/WASSAP.png" width="42px">
+<span class="tooltiptext">Follow US Both</span>
+</div>
+<a href="https://www.facebook.com/profile.php?id=100093641504615&mibextid=ZbWKwL" target="_blank"><img src="ASSESTS/PHOTOS/FACEBOOK.png" width="43px"></a>
+<br>
+<p>
+<font size="3px" color="white">
+<a href="privacy.html">Privacy Policy</a></p>
+<p><font size="3px" color="white">Copyright © 2023 <b>iGURU Official</b> All rights reserved</p>
+</div>
+</div>
+
+</body>
+</html>

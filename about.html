@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title> iGURU CONTOH</title>
+<link rel="stylesheet" href="style.css">
+
+<body>
+<body bgcolor="#EEE6CB">
+<!------------- Header-------------->
+<div class="sidenav">
+  <a href="index.html"><img src="ASSESTS/PHOTOS/LOGO.png" width="93%"></a>
+<br>
+  <a href="about.html">About Us</a>
+<br>
+  <a href="board.html">Board</a>
+<br>
+  <a href="subject.html">Subjects</a>
+<br>
+  <button class="dropdown-btn">Level +
+  </button>
+  <div class="dropdown-container">
+    <a href="primary.html">Primary</a>
+    <a href="secondary.html">Secondary</a>
+    <a href="tertiary.html">Tertiary</a>
+  </div>
+<br>
+  <a href="pricing.html">Pricing</a>
+<br><br><br><br><br><br>
+<!-----Go Up------->
+<div class="button">
+<center>
+  <div class="tooltip"><a href=""><img src="ASSESTS/PHOTOS/BOOKFLY.gif" width="84%"></a>
+    <span class="tooltiptext">I can fly up </span>
+    </div>
+</div>
+</div>
+</center>
+
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+<!----Bg Section----->
+<div style="padding-left:220px">
+<div class="container">
+  <img src="ASSESTS/PHOTOS/TUTOR24.png" style="width:96%;">
+  <div class="text-block">
+    <h4>BACKGROUND</h4>
+    <p><b>iGurU</b> is pronounced as <i>I Guru You</i> to claim that we are your one and only Tutor or Guru, and we claim that we are your tutor, that is unnecessary to find another one. iGuru tutor services was founded in 2020 by <b>Iylia Zerose</b> our current CEO who once taught students from many of the leading international schools in Singapore. She then moved to Johor Bahru, a stone's throw away from Singapore, to follow her beloved husband, Peter Zerose. Despite the global pandemic, Covid-19, Madam Zerose was determined to provide a practical live online tutoring experience as she wished to help her students who traveled long distances by public transport to her home. She realized the options for teaching live online were limited and ineffective and therefore embarked on developing her own live online tuition solution that is very helpful.</p>
+  </div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-------Visions section-->
+<div style="padding-left:430px">
+  <h1 style="color: #1f3f69; font-family: Trebuchet MS;">More...About Us&#128587;</h1>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Vision')" id="defaultOpen">Vision</button>
+    <button class="tablinks" onclick="openCity(event, 'Mission')">Mission</button>
+    <button class="tablinks" onclick="openCity(event, 'Operation')">Operation Hours</button>
+    <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+  </div>
+  
+  <div id="Vision" class="tabcontent">
+    <h3>Vision</h3>
+    <p>"Our Vision is to become a leading tutor service that focusing on Mathematics, Science, and English subjects in Malaysia"<br><br><br>
+We only have tutors for this subjects to give you better experience and specific results. Not only that, we do provide Tertiary Subjects in case you are interested to GURU with us too.
+    </p>
+  </div>
+  
+  <div id="Mission" class="tabcontent">
+    <h3>Mission</h3>
+    <p>"Our mission is to find you Reliable & Trustworthy Home Tutor or Online Tutor that you need and near you"<br><br><br>
+      We know the pain of contacting agency after agency and not getting any results 🙁
+
+Here, iGURU staffs works extremely hard to connect you with the best home tutoring to suit your private home tuition needs.
+
+    </p> 
+  </div>
+  
+  <div id="Operation" class="tabcontent">
+    <h3>Operation Hours</h3>
+    <p>Our office located Lot 19745 Jalan Yahya Awal 80100 Johor Bahru, Johor. <br><br>
+    We are open at 8 a.m. to 6 p.m. for our clients to approach for any questions regarding our services, subjects, tutors, modules, and packages.
+    </p>
+    <p><ul list-style-type:circle;">
+    <li>Sunday-Thursday: 8 a.m. to 6 p.m.</li>
+    <li>Friday: 8 a.m. to 5 p.m. (rest at 12-2 p.m.)</li>
+    <li>Saturday: 8 a.m. to 1 p.m.</li>
+    </ul></p>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>We are trying hard to make sure our customer service are easy to approach<br><br><br>
+    </p>
+    <p>
+    <ol type="A">
+        <li> Call Us at 07-227 9261 </li>
+        <li><p>You may contact Us at <a href="mailto:2021838396@student.uitm.edu.my"> feelfreetocontactus@gmail.com</a></p></li>
+    </ol>
+    </p>
+  </div>
+</div>
+
+  <script>
+  function openCity(evt, vision) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(vision).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div style="padding-left:190px">
+ <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.509852700571!2d103.7488800748295!3d1.467419998518793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da12b80518a049%3A0x4e7623400469a065!2s19745%2C%20Jalan%20Yahya%20Awal%2C%20Kampung%20Mahmoddiah%2C%2080100%20Johor%20Bahru%2C%20Johor!5e0!3m2!1sen!2smy!4v1687013546124!5m2!1sen!2smy" width="1280" height="750" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+ <br><br><br><br><br><br><br><br><br><br>
+
+<!------- footer---------->
+<section id="lastsection">
+<center>
+<div class="footer">
+<a href=""><img src="ASSESTS/PHOTOS/LOGO.png" width="8%"><a/>
+<div class="tooltip"><a href="http://wasap.my/601164411586" target="_blank"><img src="ASSESTS/PHOTOS/WASSAP.png" width="42px">
+<span class="tooltiptext">Follow US Both</span>
+</div>
+<a href="https://www.facebook.com/profile.php?id=100093641504615&mibextid=ZbWKwL" target="_blank"><img src="ASSESTS/PHOTOS/FACEBOOK.png" width="43px"></a>
+<br>
+<p>
+<font size="3px" color="white">
+<a href="privacy.html">Privacy Policy</a></p>
+<p><font size="3px" color="white">Copyright © 2023 <b>iGURU Official</b> All rights reserved</p>
+</div>
+</div>
+
+</body>
+</html>
